@@ -1,0 +1,164 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+.titulo {
+	text-align: center;
+	color: white;
+	margin-top: 60px;
+}
+
+
+.box {
+	width: 250px;
+	background: rgba(0, 0, 0, .4);
+	margin: 0 auto;
+	margin-top: 4%;
+	padding: 20px;
+	color: white;
+	text-align: center;
+	border-radius: 19px;
+	cursor: pointer;
+}
+
+.contenido-caja {
+	width: 100%;
+	margin-top: 6%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+
+}
+
+.box img {
+	width: 30%;
+	transition: all 400ms;
+}
+
+.box h2 {
+	transition: all 500ms;
+	font-size: 16px;
+	margin-top: 30px;
+}
+
+.box h3 {
+	transition: all 500ms;
+	font-size: 16px;
+	margin-top: 30px;
+}
+
+.box .contenedor-p {
+	width: 100%;
+	height: 133px;
+	left: 0;
+	bottom: 0;
+	overflow: hidden;
+	border-radius: 0px 10px;
+}
+
+.box p {
+	transition: all 600ms;
+	font-size: 13px;
+	opacity: 0;
+	transform: translateY(130px);
+}
+
+/*efecto hover*/
+.box:hover {
+	background: rgba(0, 0, 0, .7);
+}
+
+.box:hover img {
+	transform: translateY(-50%);
+}
+
+.box:hover h2 {
+	transform: translateY(-50px);
+}
+
+.box:hover .contenedor-p p {
+	transform: translateY(0px);
+	opacity: 1;
+}
+
+body {
+
+	background: url('img_2.jpg') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: 'Century Gothic', sans-serif
+}
+
+header {
+	font-family: 'Century Gothic', sans-serif idth: 500px;
+	background: rgba(0, 0, 0, .7);
+	margin: 0 auto;
+	margin-top: 4%;
+	padding: 20px;
+	color: white;
+	text-align: center;
+
+}
+
+body {
+
+	background: url('img_2.jpg') no-repeat;
+	background-size: cover;
+	font-family: 'Century Gothic', sans-serif
+}
+
+nav ul {
+
+	width: 100% padding:40px;
+	text-align: center;
+	background: rgba(0, 0, 0, .7);
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 20px;
+	transition: all ease-in-out 250ms;
+}
+
+nav ul a {
+	color: white;
+	text-decoration: none;
+
+}
+
+nav ul li a:hover {
+	color: #b9b9b9;
+}
+
+.hide {
+	font-size: 22px;
+	padding: 16px;
+	background: rgba(0, 0, 0, .9);
+	color: white;
+	cursor: pointer;
+	display: none;
+
+}
+
+@media (max-width: 768px) {
+	ul li {
+		width: 100%;
+		padding: 16px;
+		text-align: left;
+	}
+
+	.hide {
+		display: block;
+	}
+
+	nav ul {
+		display: none;
+
+	}
+
+
+}
